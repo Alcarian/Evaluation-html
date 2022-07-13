@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une course de speeder organiser par la résistance pour devenir le meilleur pilote de la galaxie ! formulaire d'inscription obligatoire!" >
+    <link rel="stylesheet" href="style.css">
+    <title>La course de la Résistance</title>
+</head>
+<body>
+    <header id="backToTop">
+        <img src="https://cdn-media.planete-starwars.com/news/70269-star-wars-the-force-awakens-resistance-banner-by-starwars98-d9gjpi9-169-lg.png?w=768" alt="">
+        <h1>Bienvenue chez la Résistance</h1>
+    </header>
+    <aside>
+        <ul class="nav">
+            <li><a href="#association"> L'association de la Résistance</a></li>
+            <li><a href="#event">Evènement : course de speeder</a></li>
+            <li><a href="#form">Formulaire d'inscription</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h2 id="association">L'Association de la Résistance</h2>
+        <h2 id="event">Evènement : course de speeder</h2>
+        
+        <div class="contact-wrapper">
+            <form class="form-horizontal" method="post" action="contact.php">
+              <h2 id="form" class="section-header">Formulaire d'inscription !</h2>
+              <label for="name">Nom</label>
+              <input type="text" id="name" placeholder="nom" name="name" required>
+            
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+            
+              <label for="phone">Code holographique</label>
+              <input type="tel" id="phone" placeholder="0600000000" name="phone">
+              <label for="category">Catégorie de speeder</label>
+              <select id="category" name="category">
+                <option value="default">Choisissez une catégorie</option>
+                <option value="speeder1">Landspeeder X-34</option>
+                <option value="speeder2">Landspeeder XP-38</option>
+                <option value="motojet1">Motojet 74-Z</option>
+                <option value="motojet2">Motojet Joben T-85</option>
+              </select>
+              <label for="message">Message</label>
+              <textarea rows="10" id="message" name="message" required></textarea>
+              <button class="send-button" id="submit" type="submit">Envoyer</button>
+              <div class="advert-wrapper">
+                <p>Souhaitez-vous recevoir nos news ?</p>
+                <input type="radio" id="yes" name="news-question" value="yes" checked>
+                <label for="yes">Oui</label>
+                <input type="radio" id="no" name="news-question" value="no">
+                <label for="no">Non</label>
+              </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="back-to-top"><a href="#backToTop">Haut de page</a></div>
+    </footer>
+</body>
+</html>
